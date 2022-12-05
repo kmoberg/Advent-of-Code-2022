@@ -1,17 +1,17 @@
 # 04 December
 # Elf Seating Arrangement
 
-i = 0
-complete_overlap = 0
-any_overlap = 0
+i: int = 0
+complete_overlap: int = 0
+any_overlap: int = 0
 
 # Open the input file and read it into an array
 with open('input.txt') as f:
     # Read the lines into an array and remove the newline character from the end of each line
-    lines = [line.rstrip() for line in f.readlines()]
+    lines: list = [line.rstrip() for line in f.readlines()]
 
     # Count the number of lines
-    lineCount = len(lines)
+    lineCount: int = len(lines)
 
     # Loop through the lines
     for line in lines:
